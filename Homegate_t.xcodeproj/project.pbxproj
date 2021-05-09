@@ -12,6 +12,10 @@
 		2B12B8BE26480A3100097E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B12B8BD26480A3100097E66 /* Assets.xcassets */; };
 		2B12B8C126480A3100097E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B12B8BF26480A3100097E66 /* LaunchScreen.storyboard */; };
 		2B12B8CC26480A3100097E66 /* Homegate_tTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B8CB26480A3100097E66 /* Homegate_tTests.swift */; };
+		2B12B8E826480BF300097E66 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B8E726480BF300097E66 /* Coordinator.swift */; };
+		2B12B8EA26480D4400097E66 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B8E926480D4400097E66 /* Storyboarded.swift */; };
+		2B12B8EC26480D6700097E66 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B8EB26480D6700097E66 /* MainCoordinator.swift */; };
+		2B12B8EE26480DE300097E66 /* HomesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B8ED26480DE300097E66 /* HomesCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		2B12B8C726480A3100097E66 /* Homegate_tTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homegate_tTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B12B8CB26480A3100097E66 /* Homegate_tTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homegate_tTests.swift; sourceTree = "<group>"; };
 		2B12B8CD26480A3100097E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B12B8E726480BF300097E66 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2B12B8E926480D4400097E66 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		2B12B8EB26480D6700097E66 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2B12B8ED26480DE300097E66 /* HomesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +83,10 @@
 		2B12B8B326480A3000097E66 /* Homegate_t */ = {
 			isa = PBXGroup;
 			children = (
+				2B12B8ED26480DE300097E66 /* HomesCVC.swift */,
 				2B12B8E426480A5800097E66 /* App */,
-				2B12B8BA26480A3000097E66 /* Main.storyboard */,
-				2B12B8BD26480A3100097E66 /* Assets.xcassets */,
-				2B12B8BF26480A3100097E66 /* LaunchScreen.storyboard */,
+				2B12B8E526480BBD00097E66 /* Lib */,
+				2B12B8E626480BD000097E66 /* Resources */,
 			);
 			path = Homegate_t;
 			sourceTree = "<group>";
@@ -99,6 +107,26 @@
 				2B12B8C226480A3100097E66 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		2B12B8E526480BBD00097E66 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2B12B8E726480BF300097E66 /* Coordinator.swift */,
+				2B12B8EB26480D6700097E66 /* MainCoordinator.swift */,
+				2B12B8E926480D4400097E66 /* Storyboarded.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		2B12B8E626480BD000097E66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B12B8BA26480A3000097E66 /* Main.storyboard */,
+				2B12B8BD26480A3100097E66 /* Assets.xcassets */,
+				2B12B8BF26480A3100097E66 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B12B8E826480BF300097E66 /* Coordinator.swift in Sources */,
+				2B12B8EC26480D6700097E66 /* MainCoordinator.swift in Sources */,
 				2B12B8B526480A3000097E66 /* AppDelegate.swift in Sources */,
+				2B12B8EA26480D4400097E66 /* Storyboarded.swift in Sources */,
+				2B12B8EE26480DE300097E66 /* HomesCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
